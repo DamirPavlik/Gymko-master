@@ -1,0 +1,100 @@
+.about-section{
+    padding: 9.6rem 0 0 0;
+    @media(max-width: 1000px){
+        padding: 3rem 0;
+    }
+
+    .row-gallery{
+    }
+
+    .text_box_about{
+        height: 100%;
+        display: grid;
+        align-content: center;
+        .about_desc_heading{
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            @media(max-width: 1000px){
+                text-align: center;
+            }
+        }
+
+        .about_desc{
+            font-size: 1.6rem;
+            line-height: $defaultLH;
+            max-width: 90%;
+            color: $paraColor;
+            @media(max-width: 1000px){
+                max-width: 100%;
+            }
+        }
+
+    }
+    
+
+    .about-img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        @media(max-width: 1000px){
+            margin-top: 2rem;
+    
+        }
+
+        .img_about{
+            width: 80%;
+            border-radius: 15px;
+        }
+    }
+   
+}
+
+.aboutsec{
+    padding: 25rem 0 10rem 0;
+    background-image: url('../../img/staff-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .text_box_about{
+            height: 100%;
+            display: grid;
+            align-content: center;
+            .about_desc_heading{
+                font-size: 3rem;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                @media(max-width: 1000px){
+                    text-align: center;
+                }
+            }
+
+            .about_desc{
+                font-size: 1.6rem;
+                line-height: $defaultLH;
+                max-width: 90%;
+                color: $paraColor;
+                @media(max-width: 1000px){
+                    max-width: 100%;
+                }
+            }
+
+        }
+        
+
+        .about-img-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            @media(max-width: 1000px){
+                margin-top: 2rem;
+        
+            }
+
+            .img_about{
+                width: 80%;
+                border-radius: 5px;
+            }
+        }
+}

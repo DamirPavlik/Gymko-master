@@ -1,0 +1,183 @@
+.documents-section{
+    padding-bottom: 9.6rem;
+
+    .accordion{
+        max-width:80%;
+        margin: 0 auto;
+        .accordion-item{
+            margin-top: 2rem;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.08);
+            .accordion-header{
+                .accordion-button{
+                    padding: 1.5rem 2rem !important;
+                    font-size: 17px;
+                    font-weight: bold;
+
+                    @media(max-width: $sm){
+                        font-size: 15px;
+                    }
+
+                    img{
+                        max-width: 40px;
+                        margin-right: 20px;
+
+                        @media(max-width: $sm){
+                            max-width: 35px;
+                        }
+
+                        &:focus{
+                            border-color: #DEEAFF;
+                            outline: none;
+                        }
+                        
+                        &:not(.collapsed){
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+
+            .accordion-body{
+                .item-wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 2rem 0;
+                    border-bottom: 1px solid rgb(218, 218, 218);
+
+                    @media(max-width: $md){
+                        display: block;
+                        text-align: center;
+                    }
+
+                    p{
+                        margin-bottom: 0 !important;
+                        font-size: 1.4rem;
+                        color: #858585;
+                        max-width: 80%;
+
+                        @media(max-width: $md){
+                            max-width: 100%;
+                        }
+                    }
+
+                    a{
+                        text-decoration: none;
+                        font-size: 1.4rem;
+                        color: $primaryColor;
+
+                        @media(max-width: $md){
+                            display: block;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                .item-wrapper-last{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+
+                    @media(max-width: $md){
+                        display: block;
+                        text-align: center;
+                    }
+
+                    p{
+                        margin-bottom: 0 !important;
+                        font-size: 1.4rem;
+                        color: #858585;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        font-size: 1.4rem;
+                        color: $primaryColor;
+
+                        @media(max-width: $md){
+                            display: block;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                .item-wrapper-male-nabavke{
+                    padding: 2rem 0;
+                    border-bottom: 1px solid rgb(218, 218, 218);
+                    h4{
+                        font-weight: 600;
+                        font-size: 18px;
+                        @media(max-width: $md){
+                            text-align: center;
+                            margin-bottom: 2rem;
+                        }
+                    }
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: $primaryColor;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        @media(max-width: $md){
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .item-wrapper-male-nabavke-last{
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                    h4{
+                        font-weight: 600;
+                        font-size: 18px;
+                        @media(max-width: $md){
+                            text-align: center;
+                            margin-bottom: 2rem;
+                        }
+                    }
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: $primaryColor;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        @media(max-width: $md){
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .item-wrapper-velike-nabavke{
+                    padding: 2rem 0;
+                    h4{
+                        font-weight: 600;
+                        font-size: 18px;
+                        @media(max-width: $md){
+                            text-align: center;
+                            margin-bottom: 2rem;
+                        }
+                    }
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: $primaryColor;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        @media(max-width: $md){
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width: $lg){
+            max-width: 100%;
+        }
+    }
+}

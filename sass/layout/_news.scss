@@ -1,0 +1,94 @@
+.news{
+    padding: 9.6rem 0;
+    .subheading{
+        @include subheading($primaryColor);
+        text-align: center;
+    }
+
+    .heading-sec{
+        @include headingSecondary($primaryHeadingColor);
+        text-align: center;
+    }
+
+    .item-wrapper{
+        margin: 0 auto;
+        width: 85%;
+        padding: 2.5rem;
+        background-color: white;
+        -webkit-box-shadow: 0px 15px 13px 1px rgba(0,0,0,0.27);
+        -moz-box-shadow: 0px 15px 13px 1px rgba(0,0,0,0.27);
+        box-shadow: 0px 15px 13px 1px rgba(0,0,0,0.27);
+        border-radius: 15px;
+        transition: 0.3s all linear;
+
+        @media(max-width: $lg){
+            margin-bottom: 5rem;
+            max-width: 70%;
+        }
+
+        @media(max-width: $md){
+            max-width: 90%;
+        }
+
+        .news_img{
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+
+        .news_heading{
+            text-align: center;
+            font-weight: 600;
+            font-size: 2.8rem;
+            margin-bottom: 2.5rem;
+            @media(max-width: $md){
+                font-size: 2.2rem;
+            }
+        }
+        
+        .news_desc{
+            margin-bottom: 2.5rem;
+            font-size: 1.4rem;
+            line-height: $defaultLH;
+            text-align: center;
+            color: $paraColor;
+            @media(max-width: $lg){
+                font-size: 1.3rem;
+            }
+        }
+
+        .news_btn{
+            display: block;
+            text-align: center;
+            background-color: $primaryColor;
+            color: $white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            padding: 0.9rem 0;
+            border:1px solid $primaryColor;
+            transition: 0.2s all linear;
+        }
+
+        .news_btn:hover{
+            @include btnHover($primaryColorDarker, $white, $primaryColorDarker)
+        }
+    }
+
+    .item-wrapper:hover{
+        margin-top: -15px;
+
+    }
+
+    .cta-news{
+        @include btn($primaryColor, $primaryColor, $white);
+        display: inline-block;
+        margin-top: 8rem;
+    }
+
+    .cta-news:hover{
+        @include btnHover($primaryColorDarker, $white, $primaryColorDarker)
+    }
+
+    .btn-news-wrapper{
+        text-align: center;
+    }
+}

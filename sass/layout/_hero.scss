@@ -1,0 +1,113 @@
+.hero{
+    padding: 3.6rem 0;
+   
+    .vector{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        max-width: 100%;
+        @media(max-width: 1050px){
+            max-width: 90%;
+        }
+        @media(max-width: 540px){
+            max-width: 88%;
+        }
+        @media(max-width: 400px){
+            max-width: 83%;
+        }
+    }
+
+    .hero-img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        @media(max-width: $md){
+            margin-top: 3rem;
+            width: 80%;
+        }
+    }
+
+    .hero-text-box{
+        // margin-top: 10rem;
+        margin: auto;
+
+
+        .btn-wrapper-hero{
+            @media(max-width: $md){
+                text-align: center;
+            }
+        }
+        .btn-primary{
+            @include btn($primaryColor, $primaryColor, $white);
+            @media(max-width: $md){
+                margin-bottom: 4rem;
+            }
+        }
+
+        .btn-primary:hover{
+            @include btnHover($primaryColorDarker, $white, $primaryColorDarker)
+        }
+
+        .btn-secondary{
+            @include btn(#fafafa, $primaryColor, $primaryColor);
+            @media(max-width: $md){
+                margin-bottom: 4rem;
+            }
+        }
+
+        .btn-secondary:hover{
+            @include btnHover($primaryColor, $white, $primaryColor)
+        }
+        
+        .primary-heading{
+            font-weight: 300;
+            color: $primaryHeadingColor;
+            font-size: 4rem;
+            @media(max-width: 500px){
+                // max-width: 90%;
+                display: block;
+                margin: 0 auto 40px auto;
+            }
+
+            span{
+                font-size: 5rem;
+                font-weight: 700;
+                @media(max-width:$lg){
+                    font-size: 4.2rem;
+                }
+                @media(max-width: $md){
+                    font-size: 3.5rem;
+                    text-align: center;
+                }
+                @media(max-width: 500px){
+                    font-size: 3.2rem;
+                }
+            }
+
+            @media(max-width: $lg){
+                // color: red;
+                font-size: 3rem;
+            }
+            @media(max-width: $md){
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+
+        .p-hero{
+            font-size: 1.6rem;
+            color: $paraColor;
+            @media(max-width: $md){
+                text-align: center;
+                font-size: 1.3rem;
+            }
+
+            @media(max-width: 500px){
+                // max-width: 90%;
+                display: block;
+                margin: 0 auto 50px auto;
+            }
+        }
+    }
+}

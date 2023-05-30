@@ -1,0 +1,240 @@
+.students-section{
+    position: relative;
+    padding-bottom: 8rem;
+    .container-filled{
+        background-color: white;
+        border-radius: 30px;
+        padding-bottom: 3rem;
+        box-shadow: 0px 6px 15px -3px rgba(0,0,0,0.1);
+        .text-box-students{
+            padding: 5rem;
+            @media(max-width: $sm){
+                padding: 5rem 0;
+            }
+            .heading-students{
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 2rem;
+                @media(max-width: $md){
+                    font-size: 2rem;
+                }
+            }
+
+            .subheading-students{
+                line-height: $defaultLH;
+                font-size: 1.5rem;
+                color: $paraColor;
+                margin-bottom: 6rem;
+                @media(max-width: $md){
+                    font-size: 1.4rem;
+                    line-height: $largeLH;
+                }
+            }
+
+            .btn-dl{
+                @include btn($primaryColor, $white, $white);
+                border-radius: 20px;
+                font-size: 1.4rem;
+            }
+        }
+
+
+        .right-side-students{
+            .owl-carousel {
+                position: absolute;
+                right: 0;
+                top: 15%;
+                max-width: 100rem !important;
+                @media(max-width: 1699px){
+                    max-width: 85rem !important;
+                }
+                @media(max-width: 1400px){
+                    position: inherit;
+                    max-width: 100% !important;
+                }
+
+                .owl-dots{
+                    display: none;
+                }
+
+                .owl-item {
+                    width: 60rem !important;
+                    height: auto !important;
+                    
+                   
+                    border-radius: 15px;
+                    // box-shadow: 0px 6px 15px -3px rgba(0,0,0,0.1) !important;
+                    // background-color: #eff3f8;
+                    background-color: #f4f7fb;
+                    @media(max-width: $md){
+                        max-width: 40rem;
+                    }
+
+                    @media(max-width: 413px){
+                        max-width: 30rem;
+                    }
+                    .item-text-box{
+                        padding: 3rem;
+                        .heading-name{
+                            font-size: 2rem;
+                            font-weight: 600;
+                            margin-bottom: 2rem;
+                        }
+                        .subheading-name{
+                            line-height: $defaultLH;
+                            font-size: 1.3rem;
+                            color: #858585;
+                        }
+                    }
+
+                    img{
+                        // width: 20rem;
+                        max-width: 100%;
+                        float: right;
+                        padding: 3rem;
+                        border-radius: 20%;
+                        @media(max-width: $lg){
+                            display: block;
+                            margin: 0 auto;
+                            max-width: 30%;
+                            float: none;
+                        }
+
+                        @media(max-width: $md){
+                            max-width: 50%;
+                        }
+                    }
+                }
+
+                &:hover{
+                    cursor: grab;
+                }
+            }
+        }
+    }
+    // .owl-carousel {
+    //     margin: 0 !important;
+    //     padding: 0 !important;
+    //     .owl-item {
+    //         background-color: red;
+    //         width: 900px !important;
+    //         margin-right: 20px !important;
+    //       }
+    // }
+
+  
+}
+
+.doktori-section{
+    position: relative;
+    padding-bottom: 8rem;
+    .container-filled{
+        background-color: white;
+        border-radius: 30px;
+        padding-bottom: 3rem;
+        box-shadow: 0px 6px 15px -3px rgba(0,0,0,0.1);
+
+        .text-box-doktori{
+            padding: 5rem;
+            @media(max-width: $sm){
+                padding: 5rem 0;
+            }
+            .heading-doktori{
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 2rem;
+                @media(max-width: $md){
+                    font-size: 2rem;
+                }
+            }
+
+            .subheading-doktori{
+                line-height: $defaultLH;
+                font-size: 1.5rem;
+                color: $paraColor;
+                margin-bottom: 6rem;
+                @media(max-width: $md){
+                    font-size: 1.4rem;
+                    line-height: $largeLH;
+                }
+            }
+
+            .btn-ctn-doctors{
+                text-align: right;
+                .btn-dl{
+                    @include btn($primaryColor, $white, $white);
+                    border-radius: 20px;
+                    font-size: 1.4rem;
+                }
+            }
+            
+        }
+    }
+
+
+    .left-side-doctors{
+        .owl-carousel {
+            position: absolute;
+            left: 0;
+            top: 15%;
+            max-width: 100rem !important;
+                @media(max-width: 1699px){
+                    max-width: 85rem !important;
+                }
+                @media(max-width: 1400px){
+                    position: inherit;
+                    max-width: 100% !important;
+                }
+
+            .owl-dots{
+                display: none;
+            }
+
+            .owl-item {
+                width: 60rem !important;
+                height: auto !important;
+                border-radius: 15px;
+                background-color: #f4f7fb;
+                @media(max-width: $md){
+                    max-width: 40rem;
+                }
+
+                @media(max-width: 413px){
+                    max-width: 30rem;
+                }
+                .item-text-box{
+                    padding: 3rem;
+                    text-align: left !important;
+                    .heading-name{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        margin-bottom: 2rem;
+                    }
+                    .subheading-name{
+                        line-height: $defaultLH;
+                        font-size: 1.3rem;
+                        color: #858585;
+                    }
+                }
+
+                img{
+                    // width: 20rem;
+                    max-width: 100%;
+                    float: right;
+                    padding: 3rem;
+                    border-radius: 20%;
+                    @media(max-width: $lg){
+                        display: block;
+                        margin: 0 auto;
+                        max-width: 30%;
+                        float: none;
+                    }
+
+                    @media(max-width: $md){
+                        max-width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.signup-section{
+    padding-bottom: 9.6rem;
+    
+    .signup-textbox-wrapper{
+        .main-heading-signup{
+            font-size: 2.6rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            @media(max-width: $md){
+                font-size: 2.2rem;
+            }
+        }
+
+        .main-subheading-signup{
+            font-size: 1.6rem;
+            color: $paraColor;
+            line-height: $defaultLH;
+            margin-bottom: 6rem;
+            @media(max-width: $md){
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .card-wrapper{
+        margin-bottom: 7rem;
+        
+        img{
+            border-radius: 10px;
+            max-width: 15%;
+        }
+
+        .item-signup-textbox{
+            .item-heading{
+                font-weight: 600;
+                font-size: 2.2rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                
+                @media(max-width: $md){
+                    font-size: 2rem;
+                }
+                
+            }
+
+            .item-subheading{
+                max-width: 80%;
+                font-size: 1.5rem;
+                line-height: $largeLH;
+                color: $paraColor;
+                @media(max-width: $md){
+                    font-size: 1.4rem;
+                    max-width: 100%;
+                }
+
+            }
+
+            .list-container{
+                list-style: none;
+                max-width: 80%;
+                padding: 0;
+                line-height: $largeLH;
+                @media(max-width: $md){
+                    max-width: 100%;
+                }
+                li{
+                    margin-top: 1rem;
+                    font-size: 1.5rem;
+                    color: #858585;
+                    @media(max-width: $md){
+                        font-size: 1.4rem;
+                    }
+                    &::before{
+                        content: '✓';
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .signup-img-wrapper{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+}

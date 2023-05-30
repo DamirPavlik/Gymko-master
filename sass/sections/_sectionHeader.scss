@@ -1,0 +1,96 @@
+.section-header{
+    @include headerEl;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    .section-nav{
+        @include navEl;
+        
+
+        .section-logo-img{
+            img{
+                @include logoNav;
+                cursor: pointer;
+            }
+        }
+
+        .section-main-nav-items{
+            ul{
+                @include navItems;
+                .dropdown-custom{
+                    position: relative;
+                    .dropdown-link-custom{
+                        cursor: pointer;
+                    }
+                    .dropdown-menu-custom{
+                        
+                        position: absolute;
+                        left: 0;
+                        top: calc(100% + 1rem);
+                        background-color: white;
+                        padding: 1.5rem 2rem;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 1px 0 rgba(0,0,0, 0.1);
+                        pointer-events: none;
+                        opacity: 0;
+                        transform: translateY(-15px);
+                        transition: opacity 0.3s linear, transform 0.3s linear;
+                        
+                        a{
+                            display: inline-block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            color: $black !important;
+                            text-decoration: none;
+                            margin-bottom: 1rem;
+                            width: 100%;
+                            pointer-events: none;
+                            transition: 0.3s color linear;
+                            @media(max-width: $md){
+                                width: 60%;
+                            }
+                        }
+
+                        a:hover{
+                            color: $primaryColor;
+                            background-color: white;
+                        }
+
+                        a:active{
+                            background-color: white;
+                        }
+
+                        .no-margin{
+                            margin: 0;
+                        }
+                    }
+
+                    .active-dropdown{
+                        transform: translateY(0);
+                        opacity: 1;
+                        pointer-events: auto;
+
+                        a{
+                            pointer-events: auto;
+                        }
+                    }
+                }
+                li {
+                    a{
+                        @include navA($white);
+                        @media(max-width: 1000px){
+                            color: $black !important;
+                        }
+                    }
+                    a:hover{
+                        color: $primaryColorTint;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,35 @@
+.loader-wrapper{
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 99999;
+}
+.custom-loader {
+    width:35px;
+    height:35px;
+    color: #456EB5;
+    --c:linear-gradient(currentColor 0 0);
+    background:
+      var(--c) 0 0,
+      var(--c) 100% 0,
+      var(--c) 100% 100%,
+      var(--c) 0 100%;
+    background-repeat: no-repeat;
+    animation: l1 1s infinite alternate;
+    position: absolute;
+    top: 45%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); 
+}
+  
+@keyframes l1 {
+    0%   {background-size: 0    4px,4px 0   ,0    4px,4px 0   }
+    25%  {background-size: 100% 4px,4px 0   ,0    4px,4px 0   }
+    50%  {background-size: 100% 4px,4px 100%,0    4px,4px 0   }
+    75%  {background-size: 100% 4px,4px 100%,100% 4px,4px 0   }
+    90%,
+    100% {background-size: 100% 4px,4px 100%,100% 4px,4px 100%}
+}

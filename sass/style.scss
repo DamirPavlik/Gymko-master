@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixin';
+@import 'general';
+@import 'queries';
+
+@import 'layout/base';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/signup';
+@import 'layout/about';
+@import 'layout/news';
+@import 'layout/profesori';
+@import 'layout/gallery';
+@import 'layout/footer';
+
+@import 'sections/sectionHeader';
+@import 'sections/section';
+@import 'sections/contact';
+@import 'sections/about';
+@import 'sections/staff';
+@import 'sections/gallery';
+@import 'sections/signup';
+@import 'sections/students';
+@import 'sections/documents';
+
+@import 'features/loader';

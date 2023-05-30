@@ -1,0 +1,117 @@
+.header{
+    @include headerEl;
+    .nav{
+        @include navEl;
+        
+
+        .logo-img{
+            @media(max-width: 1000px){
+                margin-left: 10px;
+            }
+
+            img{
+                @include logoNav;
+                cursor: pointer;
+            }
+        }
+
+        .main-nav-items{
+            ul{
+                @include navItems;
+
+                .dropdown-custom{
+                    position: relative;
+                    z-index: 999999;
+                    .dropdown-link-custom{
+                        cursor: pointer;
+                    }
+                    .dropdown-menu-custom{
+                        
+                        position: absolute;
+                        left: 0;
+                        top: calc(100% + 1rem);
+                        background-color: white;
+                        padding: 1.5rem 2rem;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 1px 0 rgba(0,0,0, 0.1);
+                        pointer-events: none !important;
+                        opacity: 0;
+                        transform: translateY(-15px);
+                        transition: opacity 0.3s linear, transform 0.3s linear;
+                        z-index: 999999;
+                       
+                        a{
+                            display: inline-block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            color: $black;
+                            text-decoration: none;
+                            margin-bottom: 1rem;
+                            width: 100%;
+                            pointer-events: none;
+                            transition: 0.3s color linear;
+                            @media(max-width: $md){
+                                width: 60%;
+                            }
+                        }
+
+                        a:hover{
+                            color: $primaryColor;
+                            background-color: white;
+                        }
+
+                        a:active{
+                            background-color: white;
+                        }
+
+                        .no-margin{
+                            margin: 0;
+                        }
+                    }
+
+                    .active-dropdown{
+                        transform: translateY(0);
+                        opacity: 1;
+                        display: block;
+                        pointer-events: auto;
+                        z-index: 999999;
+                        a{
+                            pointer-events: auto;
+                        }
+
+                        
+                        a:hover{
+                            color: $primaryColor;
+                            background-color: white;
+                        }
+
+                        a:active{
+                            background-color: white;
+                        }
+                    }
+                }
+
+             
+
+                li {
+                    .arrow-dropdown{
+                        font-size: 1.8rem;
+                    }
+
+                    a{
+                        @include navA($white);
+                        @media(max-width: 1000px){
+                            color: $black;
+                        }
+                    }
+
+                    a:hover{
+                        color: $primaryColorTint;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
